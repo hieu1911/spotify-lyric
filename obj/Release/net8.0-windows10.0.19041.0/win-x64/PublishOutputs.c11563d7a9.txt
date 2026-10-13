@@ -1,0 +1,2 @@
+D:\Tool\SpotifyLyric\publish\SpotifyLyric.pdb
+D:\Tool\SpotifyLyric\publish\SpotifyLyric.exe

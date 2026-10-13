@@ -1,0 +1,17 @@
+D:\Tool\SpotifyLyric\bin\Debug\net8.0-windows10.0.19041.0\SpotifyLyric.exe
+D:\Tool\SpotifyLyric\bin\Debug\net8.0-windows10.0.19041.0\SpotifyLyric.deps.json
+D:\Tool\SpotifyLyric\bin\Debug\net8.0-windows10.0.19041.0\SpotifyLyric.runtimeconfig.json
+D:\Tool\SpotifyLyric\bin\Debug\net8.0-windows10.0.19041.0\SpotifyLyric.dll
+D:\Tool\SpotifyLyric\bin\Debug\net8.0-windows10.0.19041.0\SpotifyLyric.pdb
+D:\Tool\SpotifyLyric\bin\Debug\net8.0-windows10.0.19041.0\Microsoft.Windows.SDK.NET.dll
+D:\Tool\SpotifyLyric\bin\Debug\net8.0-windows10.0.19041.0\WinRT.Runtime.dll
+D:\Tool\SpotifyLyric\obj\Debug\net8.0-windows10.0.19041.0\SpotifyLyric.GeneratedMSBuildEditorConfig.editorconfig
+D:\Tool\SpotifyLyric\obj\Debug\net8.0-windows10.0.19041.0\SpotifyLyric.AssemblyInfoInputs.cache
+D:\Tool\SpotifyLyric\obj\Debug\net8.0-windows10.0.19041.0\SpotifyLyric.AssemblyInfo.cs
+D:\Tool\SpotifyLyric\obj\Debug\net8.0-windows10.0.19041.0\SpotifyLyric.csproj.CoreCompileInputs.cache
+D:\Tool\SpotifyLyric\obj\Debug\net8.0-windows10.0.19041.0\SpotifyL.5928095E.Up2Date
+D:\Tool\SpotifyLyric\obj\Debug\net8.0-windows10.0.19041.0\SpotifyLyric.dll
+D:\Tool\SpotifyLyric\obj\Debug\net8.0-windows10.0.19041.0\refint\SpotifyLyric.dll
+D:\Tool\SpotifyLyric\obj\Debug\net8.0-windows10.0.19041.0\SpotifyLyric.pdb
+D:\Tool\SpotifyLyric\obj\Debug\net8.0-windows10.0.19041.0\SpotifyLyric.genruntimeconfig.cache
+D:\Tool\SpotifyLyric\obj\Debug\net8.0-windows10.0.19041.0\ref\SpotifyLyric.dll
