@@ -25,7 +25,7 @@ internal static class Program
         {
             ShutdownMode = System.Windows.ShutdownMode.OnExplicitShutdown
         };
-        var window = new LyricWindow(Settings.Load());
-        app.Run(window);
+        _ = new LyricController(Settings.Load());
+        app.Run();
     }
 }

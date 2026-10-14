@@ -47,8 +47,9 @@ Start playing something in Spotify and the lyrics strip appears on the taskbar. 
 | Hide when a fullscreen app is active | Hides the strip while you play games or watch fullscreen video |
 | Font size | Small / Medium / Large / Extra large |
 | Width | 360–800 px |
+| Copies | Shows 1–4 copies of the strip, e.g. one per monitor. Each copy is dragged and remembered separately; copy 2 starts on the second monitor, and so on |
 | Timing offset | Shows lyrics 0.5 s earlier or later per click, for lyrics that are out of sync |
-| Reset position | Moves the strip back to its default spot on the taskbar |
+| Reset position | Moves every copy back to its default spot on the taskbar |
 | Reload lyrics | Fetches the lyrics for the current song again |
 | Start with Windows | Adds or removes the app from startup (`HKCU\...\CurrentVersion\Run`) |
 | Exit | Closes the app |
@@ -59,7 +60,8 @@ Settings are saved automatically to `%APPDATA%\SpotifyLyric\settings.json`:
 
 | Key | Default | Meaning |
 |---|---|---|
-| `X`, `Y` | `null` | Window position in physical pixels; `null` places it on the taskbar automatically |
+| `Copies` | `1` | Number of lyric strips shown (minimum 1) |
+| `Positions` | `[]` | Position of each copy (`X`, `Y` in physical pixels); `null` places it automatically |
 | `Width` | `520` | Width of the strip |
 | `FontSize` | `15` | Font size of the main line (the next line is 80% of it) |
 | `ShowNextLine` | `true` | Show the next line |
@@ -76,7 +78,8 @@ Delete the file to restore all defaults.
 | `Program.cs` | Entry point; keeps the app to a single instance |
 | `MediaWatcher.cs` | Reads Spotify's title, artist and playback position through `GlobalSystemMediaTransportControlsSessionManager` every 0.5 s |
 | `LyricsProvider.cs` | Fetches lyrics from LRCLIB. It first looks for an exact match by title, artist, album and duration. If none is found, it runs a fuzzy search (dropping `feat.` and suffixes like `- Remastered`) and picks the result whose duration matches best. It parses the LRC format and caches results in memory. |
-| `LyricWindow.cs` | Transparent, borderless WPF window; draws the lyrics every 100 ms and handles the menu and tray icon |
+| `LyricController.cs` | Polls Spotify, loads lyrics, works out the current line every 100 ms and sends it to every copy; owns the menu and tray icon |
+| `LyricWindow.cs` | One transparent, borderless WPF strip: placement, dragging, staying on top, line animation |
 | `Native.cs` | Win32 calls: keeping the window above the taskbar, locating the tray area, detecting fullscreen apps |
 | `Settings.cs` | Loads and saves settings, and manages the start-with-Windows registry key |
 

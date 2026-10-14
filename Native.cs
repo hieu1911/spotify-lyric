@@ -67,6 +67,17 @@ internal static class Native
     public static extern IntPtr SetWinEventHook(uint eventMin, uint eventMax, IntPtr hmod, WinEventProc proc,
         uint idProcess, uint idThread, uint flags);
 
+    [DllImport("user32.dll")]
+    public static extern bool UnhookWinEvent(IntPtr hook);
+
+    [DllImport("user32.dll")]
+    public static extern bool IsWindowVisible(IntPtr hWnd);
+
+    [DllImport("user32.dll")]
+    public static extern bool ShowWindow(IntPtr hWnd, int cmd);
+
+    public const int SW_SHOWNOACTIVATE = 4;
+
     public const uint EVENT_SYSTEM_FOREGROUND = 0x0003;
     public const uint WINEVENT_OUTOFCONTEXT = 0x0000;
 

@@ -15,3 +15,4 @@ D:\Tool\SpotifyLyric\obj\Debug\net8.0-windows10.0.19041.0\refint\SpotifyLyric.dl
 D:\Tool\SpotifyLyric\obj\Debug\net8.0-windows10.0.19041.0\SpotifyLyric.pdb
 D:\Tool\SpotifyLyric\obj\Debug\net8.0-windows10.0.19041.0\SpotifyLyric.genruntimeconfig.cache
 D:\Tool\SpotifyLyric\obj\Debug\net8.0-windows10.0.19041.0\ref\SpotifyLyric.dll
+D:\Tool\SpotifyLyric\obj\Debug\net8.0-windows10.0.19041.0\SpotifyLyric.sourcelink.json
